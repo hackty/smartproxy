@@ -10,8 +10,7 @@ pip install smartproxy
 
 ## usage(proxy provider)
 >
-from smartproxy.api import *
-proxy = get_proxy(your_task_id)
-abandon_current_proxy(your_task_id)
-
+from smartproxy.api import *  
+proxy = get_proxy(your_task_id)  
+abandon_current_proxy(your_task_id)  
 

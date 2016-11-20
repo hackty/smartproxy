@@ -26,5 +26,12 @@ setup(
     author_email=AUTHOR_EMAIL,
     license="Apache License, Version 2.0",
     url=URL,
-    packages=find_packages(exclude=['data', 'tests*'])
+    packages=find_packages(),
+
+    entry_points={
+        'console_scripts': [
+            'smartproxy=smartproxy.run:main'
+        ]
+    },
+
 )

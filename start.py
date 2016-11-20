@@ -11,16 +11,19 @@ init_db()
 
 def update_proxy_service(delay):
     while True:
+        print "update_proxy_service start"
         update_proxy()
         time.sleep(delay)
 
 def valid_proxy_service(delay):
     while True:
+        print "valid_proxy_service start"
         validate_proxy()
         time.sleep(delay)
 
 try:
    thread.start_new_thread(update_proxy_service(120))
-   thread.start_new_thread(valid_proxy_service(60))
+   time.sleep(60)
+   thread.start_new_thread(valid_proxy_service(600))
 except:
    print "Error: unable to start thread"

@@ -7,7 +7,7 @@ from utils import get_now_time, get_cx
 
 __author__ = "ty@puton.info"
 
-req_timeout = 10
+req_timeout = 15
 testUrl = "http://www.so.com/"
 testStr = "search"
 

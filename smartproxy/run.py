@@ -23,9 +23,9 @@ def valid_proxy_service(delay):
 
 def main():
     try:
-       thread.start_new_thread(update_proxy_service(120))
+       thread.start_new_thread(update_proxy_service(3600))
        time.sleep(60)
-       thread.start_new_thread(valid_proxy_service(600))
+       thread.start_new_thread(valid_proxy_service(300))
     except:
        print "Error: unable to start thread"
 

@@ -15,6 +15,7 @@ def update_proxy():
     proxy_list = get_proxy_list()
     cx = get_cx()
     cu=cx.cursor()
+    cu.execute("delete from proxy")
     for line in proxy_list:
         try:
             validate(line)
